@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//bgfgygyg
-
 public class Player : MonoBehaviour
 {
     [SerializeField]
