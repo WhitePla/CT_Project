@@ -17,7 +17,8 @@ public class Player : MonoBehaviour
     [SerializeField]
     private Camera theCamera;
     private Rigidbody myRigid;
-    private Animator anim;
+    /*private Animator anim;*/
+    Animator anim;
 
     private void Move()
     {
@@ -66,6 +67,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
+        anim.SetBool("iswalk", false);
         myRigid = GetComponent<Rigidbody>();  // private
     }
 
@@ -76,5 +78,4 @@ public class Player : MonoBehaviour
         CharacterRotation();
         Awake();
     }
-
 }
