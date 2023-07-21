@@ -61,7 +61,7 @@ public class Player : MonoBehaviour
     {
         Cursor.visible = false; //마우스 커서를 보이지 않게
         Cursor.lockState = CursorLockMode.Locked; //마우스 커서 위치 고정
-        anim = GetComponent<Animator>(); // anim 가져오기
+        anim = GetComponentInChildren<Animator>();
     }
 
     void Start()
