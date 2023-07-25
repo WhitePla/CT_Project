@@ -5,10 +5,9 @@ using UnityEngine;
 public class Item : MonoBehaviour
 {
 
-    public enum Type
-    {
-        Ammo, Heart, Weapon, Grenade
-    }
+    public enum Type { Ammo, Heart, Weapon, Grenade };
+    public Type type;
+    public int value;
 
     void Start()
     {
